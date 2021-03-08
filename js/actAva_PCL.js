@@ -1,4 +1,3 @@
-  
 function passaSeguentPCL(objRebut){
   let idObjPregAct = objRebut.parentElement.parentElement.id;
   let colArticles = document.getElementsByTagName("article");
@@ -24,4 +23,3 @@ function amagaElementPCL(idRebut){
   document.getElementById(idRebut).classList.remove("elementVisiblePCL");
   document.getElementById(idRebut).classList.add("elementOcultPCL");
 }
-
