@@ -1,0 +1,12 @@
+.elementOcultPCL {
+  display: none;
+}
+
+.elementVisiblePCL {
+  display: flex;
+}
+
+.espaibotonsPCL{
+  display: flex;
+  justify-content: space-between;
+}

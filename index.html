@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estil.css">
-    <link rel="stylesheet" href="./css/actAva_JPC.css">
+    <link rel="stylesheet" href="./css/actAva_PCL.css">
     <title>Examen</title>
   </head>
   <body>
     <main>
-      <article>
+      
+      <article class="elementVisiblePCL" id="pregunta1PCL">
         <span class="titol negre">MP06 - UF03<br>Activitat avaluativa</span>
         <span class="subtitolText blanc">dilluns, 8 de març de 2021</span>
-        <div class="botonsJPC">
-          <button class="boto inactiu" disabled onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
-          <button class="boto actiu" onclick="mostraAlerta();">Següent &gt;&gt;</button>
+        <div class="botons espaibotonsPCL">
+          <button class="boto actiu" onclick="passaAnteriorPCL(this);">&lt;&lt;&nbsp;Anterior</button>
+          <button class="boto actiu " onclick="passaSeguentPCL(this)">Següent &gt;&gt;</button>
         </div>
       </article>
-      <article id="enunciat_1">
+      <article id="enunciat_1" class="elementOcultPCL">
         <span class="subtitol negre">Exercici 1</span>
         <div>
           <div class="enunciat">
@@ -38,12 +39,13 @@
             <button class="boto actiu" type="button" id="neteja" value="neteja" onclick="netejaColleccio()">Neteja Col·lecció</button>
           </div>
         </div>
-        <div class="botonsJPC">
-          <button class="boto actiu" onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
-          <button class="boto actiu" onclick="mostraAlerta();">Següent&nbsp;&gt;&gt;</button>
+        <div class="botons espaibotonsPCL">
+          <button class="boto actiu" onclick="passaAnteriorPCL(this);">&lt;&lt;&nbsp;Anterior</button>
+          <button class="boto actiu " onclick="passaSeguentPCL(this)">Següent &gt;&gt;</button>
         </div>
       </article>
-      <article id="enunciat_2">
+
+      <article id="enunciat_2" class="elementOcultPCL">
         <span class="subtitol negre">Exercici 2</span>
         <div>
           <div class="enunciat">
@@ -74,15 +76,15 @@
             </label>
           </div>
         </div>
-        <div class="botonsJPC">
-          <button class="boto actiu" onclick="mostraAlerta();">&lt;&lt;&nbsp;Anterior</button>
-          <button class="boto actiu" onclick="mostraAlerta();">Següent&nbsp;&gt;&gt;</button>
+        <div class="botons espaibotonsPCL">
+          <button class="boto actiu" onclick="passaAnteriorPCL(this);">&lt;&lt;&nbsp;Anterior</button>
+          <button class="boto actiu " onclick="passaSeguentPCL(this)">Següent &gt;&gt;</button>
         </div>
       </article>
     </main>
 
-    <script src="./js/actAva_JPC.js"></script>
-    <script src="../js/matrius.js"></script>
-    <script src="../js/operacions.js"></script>
+    <script src="./js/actAva_PCL.js"></script>
+    <script src="./js/matrius.js"></script>
+    <script src="./js/operacions.js"></script>
   </body>
 </html>
